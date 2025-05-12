@@ -1,0 +1,68 @@
+/* RightSidebar.css */
+.right-sidebar {
+  width: 20%; /* 사이드바 너비 */
+  background-color: #f5f5f5; /* 배경색 */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+}
+
+.my-profile {
+  display: flex;
+  align-items: center; /* 이미지와 텍스트 수직 정렬 */
+  margin-bottom: 30px; /* 내 프로필과 추천 친구 간 간격 */
+}
+
+.profile-image {
+  width: 50px; /* 내 프로필 이미지 크기 */
+  height: auto; /* 비율 유지 */
+  border-radius: 50%; /* 둥근 이미지 */
+  margin-right: 10px; /* 이미지와 텍스트 간 간격 */
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column; /* 텍스트를 세로 정렬 */
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-id {
+  font-size: 12px;
+  color: #888; /* 아이디 색상 */
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.friend {
+  display: flex;
+  align-items: center; /* 이미지와 텍스트 수직 정렬 */
+  margin-bottom: 20px; /* 친구 간 간격 */
+}
+
+.friend-image {
+  width: 40px; /* 추천 친구 이미지 크기 */
+  height: auto; /* 비율 유지 */
+  border-radius: 50%; /* 둥근 이미지 */
+  margin-right: 15px; /* 이미지와 텍스트 간 간격을 넓힘 */
+}
+
+.friend-info {
+  display: flex;
+  flex-direction: column; /* 텍스트를 세로 정렬 */
+}
+
+.friend-name {
+  font-size: 14px;
+}
+
+.follow-btn {
+  font-size: 12px;
+  color: #007bff; /* 파란색 텍스트 */
+}
