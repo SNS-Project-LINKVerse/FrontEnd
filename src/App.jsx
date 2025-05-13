@@ -1,36 +1,58 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Sidebar from './components/Sidebar';
-import MainContent from './components/MainContent';
-import RightSidebar from './components/RightSidebar';
-import HomePage from './pages/HomePage';
-import SearchPage from './pages/SearchPage';
-import MessagePage from './pages/MessagePage';
-import AlarmPage from './pages/AlarmPage';
-import UploadPage from './pages/UploadPage';
-import ProfilePage from './pages/ProfilePage';
-import './App.css';
+import Login from './pages/Login';
+import Home from './pages/Home';
+import Membership from './pages/Membership';
+//import './styles.css';
+import SplashScreen from './pages/SplashScreen';
 
-const App = () => {
+function App() {
+  //const [count, setCount] = useState(0)
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
-      <div className="app">
-        <div className="content">
-          <Sidebar />
-          <Routes>
-            /* 나중에 MainContent는 Homepage로 수정 */
-            <Route path="/" element={<MainContent />} />
-            <Route path="/search" element={<SearchPage />} />
-            <Route path="/message" element={<MessagePage />} />
-            <Route path="/alarm" element={<AlarmPage />} />
-            <Route path="/upload" element={<UploadPage />} />
-            <Route path="/profile" element={<ProfilePage />} />
-          </Routes>
-          <RightSidebar />
-        </div>
-      </div>
+      {loading ? (
+        <SplashScreen />
+      ) : (
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/membership" element={<Membership />} />
+        </Routes>
+      )}
     </Router>
+    /*<>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>*/
   );
-};
+}
 
 export default App;
