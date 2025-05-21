@@ -1,0 +1,213 @@
+
+/* 📌 전체 페이지 레이아웃 */
+.login-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7fb;
+    gap: 40px;
+}
+
+/* 📱 스마트폰 UI 영역 */
+.phone-mockup {
+    /*flex: 1;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-mockup img {
+    width: 300px;
+    height: auto;
+}
+
+/* 🔒 로그인 박스 */
+.login-box {
+    /*flex: 1;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: center;
+}
+
+/* 제목 */
+.login-box h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 입력 필드 */
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* 로그인 버튼 */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:first-of-type {
+    background-color: blue;
+    color: white;
+}
+
+.register-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    width: 250px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7fb;
+    color: #000;
+    font-size: 24px;
+}
+
+.splash-container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.splash-container h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.splash-container p {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/**/
+
+/* 전체 화면 중앙 정렬 */
+.membership-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7fb;
+}
+
+/* 회원가입 박스 */
+.membership-box {
+    position: relative;
+    width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 뒤로가기 버튼 */
+.back-button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* 입력 필드 스타일 */
+.input-container {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.input-container .icon {
+    margin-right: 10px;
+    color: gray;
+}
+
+input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+/* 회원가입 버튼 */
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* 로그인 이동 링크 */
+.login-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+.login-link span {
+    color: blue;
+    cursor: pointer;
+}
