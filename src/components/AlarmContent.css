@@ -1,0 +1,94 @@
+.alarm-content {
+  flex: 1;
+  background: #f7f7f7;
+  padding: 40px 32px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.alarm-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.alarm-section {
+  margin-bottom: 40px;
+}
+
+.alarm-section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 20px;
+  padding-left: 4px;
+}
+
+.alarm-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alarm-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  margin-bottom: 8px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.alarm-item:hover {
+  background: #f9f9f9;
+}
+
+.alarm-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #bdb3b0;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.alarm-details {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.alarm-text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  line-height: 1.4;
+}
+
+.alarm-user {
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+}
+
+.alarm-message {
+  color: #333;
+  font-size: 16px;
+}
+
+.alarm-time {
+  font-size: 14px;
+  color: #999;
+  margin-top: 2px;
+}

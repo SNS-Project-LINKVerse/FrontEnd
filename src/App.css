@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.story-modal-backdrop {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.7); z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+}
+.story-modal-content {
+  background: #222; border-radius: 14px; padding: 20px; position: relative;
+}
+.story-modal-close {
+  position: absolute; top: 12px; right: 12px; background: none; border: none; color: #fff; font-size: 22px; cursor: pointer;
+}
