@@ -1,0 +1,155 @@
+/* 전체 페이지 컨테이너 */
+.page-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 가운데 검색 페이지 */
+.search-page {
+  display: flex;
+  flex: 1;
+  background-color: #f7f7f7;
+}
+
+.search-left {
+  flex: 2;
+  padding: 2rem;
+  background-color: white;
+  border-right: 1px solid #ccc;
+}
+
+.search-left h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.clear-all {
+  background: none;
+  border: none;
+  color: royalblue;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.search-history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 10px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.search-item:hover {
+  background-color: #f1f1f1;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #bca8a4;
+  margin-right: 0.8rem;
+}
+
+.search-info {
+  flex: 1;
+}
+
+.username {
+  display: block;
+  font-weight: bold;
+}
+
+.realname {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #444;
+  cursor: pointer;
+}
+
+/* 오른쪽 추천 친구 */
+.search-right {
+  flex: 1;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-left: 1px solid #ccc;
+}
+
+.my-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.my-profile .profile-circle {
+  margin-right: 0.8rem;
+}
+
+.recommend-title {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.recommend-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.recommend-user .profile-circle {
+  margin-right: 0.8rem;
+}
+
+.follow {
+  margin-left: auto;
+  color: royalblue;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
